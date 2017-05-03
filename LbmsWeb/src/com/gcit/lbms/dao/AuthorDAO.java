@@ -15,6 +15,7 @@ public class AuthorDAO extends BaseDAO {
 	public AuthorDAO(Connection conn) {
 		super(conn);
 	}
+	// test
 
 	public Integer addAuthor(Author author) throws SQLException, ClassNotFoundException {
 		Integer authorid=saveWithID("insert into tbl_author (authorName) values (?)", new Object[] {author.getAuthorName()});
